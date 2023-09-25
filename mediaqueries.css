@@ -1,0 +1,47 @@
+body{
+    background-color: blue;
+}
+
+#small{
+    font-size: small;
+    border: 2px solid black;
+    flex-basis: calc(100%/3);
+    background-color: aqua;
+}
+
+#medium{
+    font-size: medium;
+    border: 2px solid black;
+    flex-basis: 66%;
+    background-color: brown;
+}
+
+#large{
+    font-size: large;
+    border: 2px solid black;
+    background-color: blanchedalmond;
+}
+
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px ){
+    body{
+        background-color: green;
+    }
+}
+
+
+@media (max-width: 300px ){
+    body{
+        background-color: red;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    
+}
+
