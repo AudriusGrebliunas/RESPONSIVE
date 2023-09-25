@@ -1,6 +1,8 @@
 body{
     background-color: blue;
+    font-size: 14px;
 }
+
 
 #small{
     font-size: small;
@@ -23,7 +25,7 @@ body{
 
 .flex{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 @media (max-width: 768px ){
@@ -40,6 +42,9 @@ body{
         border-right: none;
         flex-basis: calc(100%*2/3)
     }
+    .flex{
+        flex-wrap: wrap;
+    }
 }
 
 
@@ -50,6 +55,8 @@ body{
     .flex{
         flex-direction: column;
     }
+
+
     
 }
 
